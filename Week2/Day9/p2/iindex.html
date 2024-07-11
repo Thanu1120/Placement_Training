@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+       
+            <label for="t1" >First Number</label>
+            <input type="text" id="t1"><br>
+            <label for="t2">Second Number</label>
+            <input type="text" id="t2"><br>
+            <label for="t3">Result</label>
+            <input type="text" id="t3"><br>
+            <button onclick="sum()">sum</button>
+       
+    </div>
+    <script>
+        function sum(){
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var c = parseInt(a)+parseInt(b);
+            console.log(a);
+            document.getElementById("t3").value = c;
+
+            
+}
+    </script>
+</body>
+</html>
